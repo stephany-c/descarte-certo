@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap 5.0.0 Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!-- Main styles file -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Descarte Certo</title>
+</head>
+<body>
+
+  <div class="my-container">
+    <div class="my-header shadow-sm">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo/logo.png" alt="" width="60" height="48" class="d-inline-block align-text-top">
+      </a>
+      <div class="my-header-options">
+        <span class="material-icons me-3 no-select" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">home</span>
+        <span class="material-icons no-select" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Conta">account_circle</span>
+      </div>
+    </div>
+    <div class="my-main-content">
+      <div class="map-area shadow-sm">
+        <div class="map">Mapa</div>
+        <div class="map-filter">
+          <span class="material-icons no-select">chevron_left</span>
+          <span>Filter</span>
+          <span class="material-icons no-select">chevron_right</span>
+        </div>
+      </div>
+      <div class="often-discarted shadow-sm">
+        <span class="pt-2 ps-2">Frequentemente descartados</span>
+        <div class="often-discarted-area">
+          <span id="often-discarted-area-button-left" class="material-icons no-select my-clickable-icons">chevron_left</span>
+          <ul id="my-slide-show" class="often-discarted-list">
+            <li my-slide-id="1" class="often-discarted-list-item-invisible my-selectable-items"><img src="img/often-discarted/lata.jpg"><span>Lata 350ml</span></li>
+            <li my-slide-id="2" class="my-selectable-items" ><img src="img/often-discarted/bateria.jpg"><span>Bateria celular</span></li>
+          </ul>
+          <span id="often-discarted-area-button-right" class="material-icons no-select my-clickable-icons">chevron_right</span>
+        </div>
+      </div>
+    </div>
+    <div class="my-footer shadow-lg">
+      © 2021 Descarte Certo
+    </div>
+  </div>
+
+
+  <!-- JQuery 3.6.0 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap 5.0.0 Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <!-- Main.js -->
+  <script src="js/main.js"></script>
+</body>
+</html>
