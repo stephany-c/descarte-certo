@@ -1,0 +1,123 @@
+/* Cabeçalho */
+
+.header{
+    background-color: rgb(185, 238, 206);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+}
+
+.menu_area{
+    margin-top: 40px;
+}
+
+.menu_area nav{
+    background-color: #7eb69c;
+}
+
+.menu_area nav a{
+    color:white;
+}
+
+.menu_area nav:hover{
+    background-color: #225343;
+}
+
+.activee{
+    background-color: #225343 !important;
+}
+
+/* Corpo do site */
+
+.main{
+    margin-bottom: 20px;
+}
+
+/* Card Importancia */
+
+.card{
+    margin-top: 30px;
+    border-radius: 20px;
+    border-color: teal;
+    margin-right: 70px;
+}
+
+.card_importancia h5{
+    text-align: center;
+    color: #085f42;
+}
+
+.card_importancia p{
+    text-align: center;
+    font-size: 19px;
+}
+
+.card-body{
+    /* background-color:#daf6e1; */
+    border-radius: 20px;
+}
+
+/* Boas Vindas */
+
+.card_bem_vindo h5{
+    text-align: center;
+    color: #085f42;
+}
+
+.card_bem_vindo p{
+    text-align: center;
+    font-size: 19px;
+}
+
+.card-body{
+    /* background-color:#daf6e1; */
+    border-radius: 20px;
+}
+
+/* Pontos de coleta */
+
+.segunda_pag{
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.botao_area{
+    margin-top: 100px;
+}
+
+.botao_area nav a{
+    color:white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Carousel */
+
+.carousell{
+    margin-top: 20px;
+}
+
+.carousel-inner{
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+/* Card Lixeiras */
+
+.card{
+    margin-left: 45px;
+}
+
+/* Rodapé */
+
+.footer{
+    background-color:rgb(185, 238, 206);
+}
+
+.footer_area{
+    padding: 20px;
+    text-align: center;
+}

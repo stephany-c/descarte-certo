@@ -1,65 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Bootstrap 5.0.0 Css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-  <!-- Main styles file -->
-  <link rel="stylesheet" href="styles/styles.css">
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  <title>Descarte Certo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Descarte Certo!</title>
 </head>
 <body>
 
-  <div class="my-container">
-    <div class="my-header shadow-sm">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo/logo.png" alt="" width="60" height="48" class="d-inline-block align-text-top">
-      </a>
-      <div class="my-header-options">
-        <span class="material-icons me-3 no-select" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">home</span>
-        <span class="material-icons no-select" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Conta">account_circle</span>
-      </div>
-    </div>
-    <div class="my-main-content">
-      <div class="map-area shadow-sm">
-        <div class="map">Mapa</div>
-        <div class="map-filter">
-          <span class="material-icons no-select">chevron_left</span>
-          <span>Filter</span>
-          <span class="material-icons no-select">chevron_right</span>
+    <header class="container-fluid header">
+
+        <div class="row">
+
+            <div class="col-12 header_area">
+                <div class="row">
+                    <!-- Ocupação da logo em colunas -->
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                        <img src="imagens/logoo-removebg.png" class="logo">
+                    </div>
+                    <!-- Ocupação do menu em colunas -->
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-10 menu_area">
+                      <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link activee" href="#" >Home</a>
+                         <a class="flex-sm-fill text-sm-center nav-link activee" href="#" >Cadastro</a>
+                         <a class="flex-sm-fill text-sm-center nav-link activee" href="#">Perfil</a>
+                         <a class="flex-sm-fill text-sm-center nav-link activee" href="index1.html">Descartes</a>
+                     </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="often-discarted shadow-sm">
-        <span class="pt-2 ps-2">Frequentemente descartados</span>
-        <div class="often-discarted-area">
-          <span id="often-discarted-area-button-left" class="material-icons no-select my-clickable-icons">chevron_left</span>
-          <ul id="my-slide-show" class="often-discarted-list">
-            <li my-slide-id="1" class="often-discarted-list-item-invisible my-selectable-items"><img src="img/often-discarted/lata.jpg"><span>Lata 350ml</span></li>
-            <li my-slide-id="2" class="my-selectable-items" ><img src="img/often-discarted/bateria.jpg"><span>Bateria celular</span></li>
-          </ul>
-          <span id="often-discarted-area-button-right" class="material-icons no-select my-clickable-icons">chevron_right</span>
-        </div>
-      </div>
-    </div>
-    <div class="my-footer shadow-lg">
-      © 2021 Descarte Certo
-    </div>
-  </div>
+
+    </header>
+
+    <main class="container-fluid main">
+
+        <div class="row">
+
+            <div class="col-12">
+                
+                <div class="row">
+                    <!-- Mensagem de boas vindas -->
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 card_bem_vindo">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5><b>Seja Bem Vindo!</b></h5>
+                          <p>Olá! Seja bem vindo ao Descarte Certo! Nós temos como objetivo mostrar a importância
+                            que a reciclagem de materiais possui para salvar nosso Planeta Terra. Aqui reunimos
+                            pontos de coleta próximos a você, além de encontrar curiosidades e informações sobre 
+                            os tipos de materiais recicláveis existentes.
+                          </p>                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-2 boas_vindas">
+                          <div class="row g-0 bg- position-relative">
+                            <img src="imagens/aaa-removebg-preview.png">
+                          </div>
+                      </div>
+
+                    <!-- Importancia do Descarte -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 card_importancia">
+                    <div class="card">
+                        <div class="card-body"> 
+                          <h5><b>A importância do descarte correto de materiais</b></h5>
+                          <p>
+                            O descarte incorreto do lixo pode prejudicar muito o meio ambiente.
+                            Separar o lixo corretamente e enviá-lo para empresas de coleta seletiva 
+                            alivia de forma significativa o despejo em aterros sanitários e lixões a céu 
+                            aberto, que podem contaminar o solo e agravar o efeito estufa.</p>
+                        </div>
+                      </div>
+                </div>
+                </div>
+
+            </div>
+
+            <!-- Botão segunda página -->
+            <div class="row">
+
+                <div class="col-12 segunda_pag">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-10 botao_area">
+                            <nav class="nav nav-pills flex-column flex-sm-row">
+                                <a class="flex-sm-fill text-sm-center nav-link activee" href="index1.html"> Deseja saber pontos de coleta seletiva próximo à você? Clique aqui!
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                          <div class="row g-0 bg- position-relative">
+                              <img src="imagens/ba67c44d437af206e48a7f9f8048b870-removebg-preview.png" class="localizacao">
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
 
 
-  <!-- JQuery 3.6.0 -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Bootstrap 5.0.0 Js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-  <!-- Main.js -->
-  <script src="js/main.js"></script>
+            <!-- Carousel -->
+            <div class="row">
+
+                <div class="col-12 carousell">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img width="100%" height="600" src="imagens/slide.png" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img width="100%" height="600" src="imagens/slide2.png" class="d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img width="100%" height="600" src="imagens/slide.png" class="d-block" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+            </div>
+
+            <!-- Lixeiras -->
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-12 col-sm-12 col-md 6 col-lg-3">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-bodyy">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md 6 col-lg-3">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-bodyy">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md 6 col-lg-3">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-bodyy">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md 6 col-lg-3">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-bodyy">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid footer">
+
+        <div class="row">
+            <!-- Rodapé -->
+            <div class="col-12 footer_area">
+                Descarte Certo! - Todos os direitos reservados - 2021
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>
