@@ -9,7 +9,10 @@
 .logo{
     width: 150px;
 }
+.localizacao img{
 
+    width: 10px;
+}
 .menu_area{
     margin-top: 40px;
 }
@@ -45,6 +48,10 @@
     margin-right: 70px;
 }
 
+.card_importancia{
+
+}
+
 .card_importancia h5{
     text-align: center;
     color: #085f42;
@@ -61,7 +68,9 @@
 }
 
 /* Boas Vindas */
+.card_bem_vindo{
 
+}
 .card_bem_vindo h5{
     text-align: center;
     color: #085f42;
