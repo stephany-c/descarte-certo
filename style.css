@@ -130,3 +130,68 @@
     padding: 20px;
     text-align: center;
 }
+
+/* Mapa */
+.mapa > iframe {
+    width: 100%;
+    height: 40vh;
+}
+
+/* Frequentemente descartados */
+.fd-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+.fd-list-item {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+
+    justify-items: start;
+    align-items: center;
+}
+
+.fd-list-item > img {
+    justify-self: end;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    width: 200px;
+    height: 200px;
+}
+
+.fd-list-item > p {
+    align-self: end;
+    
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.fd-list-item > button {
+    align-self: start;
+
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    /* padding: 10px; */
+}
+
+/* Slick */
+.slick-prev:before {
+    color: black;
+  }
+  .slick-next:before {
+    color: black;
+  }
+
+/* .slick-prev, .slick-next{ background:blue;} */
