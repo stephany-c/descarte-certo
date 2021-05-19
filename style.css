@@ -95,6 +95,7 @@
 
 .botao_area{
     margin-top: 100px;
+    padding: 5px;
 }
 
 .botao_area nav a{
@@ -187,9 +188,8 @@
 /* Slick */
 .slick-prev:before {
     color: grey;
-  }
-  .slick-next:before {
-    color: grey;
-  }
+}
 
-/* .slick-prev, .slick-next{ background:blue;} */
+.slick-next:before {
+    color: grey;
+}

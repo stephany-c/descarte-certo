@@ -1,46 +1,159 @@
-/* Cabeçalho */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-.header{
-    background-color: rgb(185, 238, 206);
-    margin-bottom: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #7eb69c;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #000000;
+    font-size: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
-.logo{
-    width: 150px;
+main.social-media {
+    display: flex;
+    align-content: center;
 }
 
-.menu_area{
-    margin-top: 40px;
+main .social-media a {
+    text-decoration: none;
 }
 
-.menu_area nav{
-    background-color: #7eb69c;
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
 }
 
-.menu_area nav a{
-    color:white;
+main .social-media a:first-child img {
+    margin-left: 0;
 }
 
-.menu_area nav:hover{
-    background-color: #225343;
+main .alternative {
+    margin-top: 1rem;
 }
 
-.activee{
-    background-color: #225343 !important;
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #83d8bc;
+    position: relative;
 }
 
-/* Corpo do site */
-
-
-
-/* Rodapé */
-
-.footer{
-    background-color:rgb(185, 238, 206);
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: #0b1a15;
 }
 
-.footer_area{
-    padding: 20px;
-    text-align: center;
+main .alternative span::after {
+    left: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background: #193f32;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: #63ac92;
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: #000000;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #136d4c;
+}
+
+section.images {
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4rem;
+    margin-bottom: 90px;
+}
+
+section.images img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
 }
