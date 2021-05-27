@@ -96,7 +96,7 @@ main form input {
     width: 300px;
     height: 50px;
     padding: 0 0.5rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     outline: none;
     color: #63ac92;
     font-size: 1rem;
@@ -106,8 +106,9 @@ main form input {
 
 main form input[type="submit"] {
     cursor: pointer;
-    width: 50%;
-    margin-top: 4rem;
+    width: 110px;
+    /* width: 50px; */
+    /* margin-top: 4rem; */
     border: none;
     border-radius: 32px;
     background: #000000;
@@ -118,6 +119,17 @@ main form input[type="submit"] {
 
 main form input[type="submit"]:hover {
     background: #136d4c;
+}
+
+.login-actions {
+    margin-top: 50px;
+}
+
+.login-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 section.images {

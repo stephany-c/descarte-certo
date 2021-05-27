@@ -11,7 +11,7 @@
     <main>
         <h1>Criar Conta</h1>
 
-        <form action="">
+        <form id="cadastro-form" action="">
             <label for="name">
                 <span>Nome</span>
                 <input type="text" id="name" name="name">
@@ -27,11 +27,18 @@
                 <input type="password" id="password" name="password">
             </label>
 
-            <input type="submit" value="Sign Up" id="button">
+            <div class="login-actions">
+                <input type="submit" value="Sign Up" id="button">
+            </div>
         </form>
     </main>
     <section class="images">
         <img src="imagens/WhatsApp_Image_2021-05-17_at_20.33.16-removebg-preview.png" alt="Mobile">
     </section>
+
+    <!-- JQuery 3.6.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Main js -->
+    <script src="js/cadastro.js"></script>
 </body>
 </html>

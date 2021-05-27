@@ -25,12 +25,19 @@
     color:white;
 }
 
-.menu_area nav:hover{
+.menu_area a:hover{
     background-color: #225343;
 }
 
 .activee{
     background-color: #225343 !important;
+}
+
+.menu_account {
+    display: flex;
+    /* grid-template-rows: 1fr 1fr; */
+    align-items: center;
+    justify-content: center;
 }
 
 /* Corpo do site */
