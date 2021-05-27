@@ -25,21 +25,32 @@
         <div class="row">
 
             <div class="col-12 header_area">
-                <div class="row">
-                     <!-- Ocupação da logo em colunas -->
+                <div class="row mb-3">
+                    <!-- Ocupação da logo em colunas -->
                     <div class="col-12 col-sm-12 col-md-4 col-lg-2">
                         <img src="imagens/logoo-removebg.png" class="logo">
                     </div>
-                     <!-- Ocupação do menu em colunas -->
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-10 menu_area">
-                        <nav class="nav nav-pills flex-column flex-sm-row">
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Home</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Eletrônico</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Metal</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Papel</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Plastico</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Vidro</a>  
-                        </nav>
+                    <!-- Ocupação do menu em colunas -->
+                    <div class="col-12 col-sm-8 col-md-5 col-lg-8 menu_area">
+                      <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html" >Home</a>
+                         <a class="flex-sm-fill text-sm-center nav-link activee" href="cadastro.html" >Cadastro</a>
+                         <a class="flex-sm-fill text-sm-center nav-link activee" href="#">Perfil</a>
+                         <a class="flex-sm-fill text-sm-center nav-link activee" href="mapa.html">Descartes</a>
+                     </nav>
+                    </div>
+
+                    <div class="col-12 col-sm-4 col-md-3 col-lg-2 mt-3 menu_account">
+                      <div class="row">
+                        <span class="material-icons col-12 mb-2">
+                          account_circle
+                        </span>
+                        <div id="menu_account--name" class="col-12">
+                          <p></p>
+                          <button id="menu_account--logout" type="button" class="btn btn-outline-danger">Sair</button>
+                        </div>
+                        <a href="login.html"><button id="menu_account--button" type="button" class="btn btn-outline-success">Entrar</button></a>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -52,8 +63,39 @@
         <div class="row">
 
             <div class="col-12 mapa">
-                <h4>Mapa</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.4405948473614!2d-43.949894685980915!3d-19.821301986664682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDQ5JzE2LjciUyA0M8KwNTYnNTEuNyJX!5e0!3m2!1sen!2sbr!4v1620936213636!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h4>Localização</h4>
+                <style>
+                    #map {width: 100%; height: 500px;}
+                </style> 
+                <div>
+                <div id="map"></div>
+
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                    // The location of Uluru
+                    const uluru = { lat: -19.919124786602957, lng: -43.9386291030576};
+                    // The map, centered at Uluru
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 16,
+                        center: uluru,
+                    });
+                    // The marker, positioned at Uluru
+                    const marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map,
+                    });
+                    }
+                </script>
+                </head>
+                <body>
+                
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT542zYsbxTmvsXH40IoNdmeIm0eeIMSU&callback=initMap&libraries=&v=weekly"
+                    async
+                ></script>
+
+                </div>            
             </div>
 
             <div class="col-12 mt-5 frequentemente_descartados">

@@ -140,12 +140,25 @@
 }
 
 /* Mapa */
-.mapa > iframe {
-    width: 100%;
-    height: 40vh;
+#map {
+    height: 100%;
+  }
+
+.mapa h4{
+    text-align: center;
+    font-size: 40px;
+    color: #225343;
+    margin-bottom: 20px;
 }
 
 /* Frequentemente descartados */
+
+.frequentemente_descartados h4{
+    text-align: center;
+    font-size: 40px;
+    color: #225343;
+}
+
 .fd-content {
     padding-left: 5%;
     padding-right: 5%;
