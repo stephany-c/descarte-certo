@@ -1,125 +1,166 @@
 /* Cabeçalho */
 
-.header{
-    background-color: rgb(185, 238, 206);
-    margin-bottom: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.row {
+    margin-right: 0%;
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex;
+}
+
+header nav ul li {
+    list-style: block;
+}
+
+header a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(1, 39, 30);
+    margin-inline: 50px;
+    margin-top: 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    height: calc(100vh - 210px);
+    background: no-repeat center/cover url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
+}
+
+.header_content {
     text-align: center;
+    animation: zoomIn;
+    animation-duration: 2s;
+    margin-top: 80px;
+    color: rgb(1, 29, 26);
 }
 
 .logo{
-    width: 150px;
-}
-.localizacao img{
-
-    width: 10px;
-}
-.menu_area{
-    margin-top: 40px;
+    width: 130px;
 }
 
-.menu_area nav{
-    background-color: #7eb69c;
+.mapa_header {
+    height: calc(100vh - 480px);
+    background: no-repeat center/cover url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
 }
 
-.menu_area nav a{
-    color:white;
+.mapa_header a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(1, 39, 30);
+    margin-inline: 50px;
+    margin-top: 30px;
 }
 
-.menu_area a:hover{
-    background-color: #225343;
-}
-
-.activee{
-    background-color: #225343 !important;
-}
-
-.menu_account {
+.mapa_header nav {
     display: flex;
-    /* grid-template-rows: 1fr 1fr; */
-    align-items: center;
+    justify-content: space-around;
+}
+
+.main h4 {
+    justify-content: center;
+    text-align: center;
+    color: #225343;
+    margin-top: 10px;
+}
+
+
+/* Corpo do site - cards*/
+
+.container-fluid{
+    padding: 0;
+}
+
+div.cards {
+    display: flex;
+    padding: 32px;
     justify-content: center;
 }
 
-/* Corpo do site */
-
-.main{
-    margin-bottom: 20px;
-}
-
-/* Card Importancia */
-
-.card{
-    margin-top: 30px;
-    border-radius: 20px;
-    border-color: teal;
-    margin-right: 70px;
-}
-
-.card_importancia{
-
-}
-
-.card_importancia h5{
+div.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color: #085f42;
-}
-
-.card_importancia p{
-    text-align: center;
-    font-size: 19px;
-}
-
-.card-body{
-    /* background-color:#daf6e1; */
+    padding: 1rem 1.5rem;
     border-radius: 20px;
+    max-height: 468px;
+    margin-left: 32px;
 }
 
-/* Boas Vindas */
-.card_bem_vindo{
-
-}
-.card_bem_vindo h5{
-    text-align: center;
-    color: #085f42;
+div.cards section.card:first-child {
+    margin-left: 0;
 }
 
-.card_bem_vindo p{
-    text-align: center;
-    font-size: 19px;
+div.cards section.card .icon {
+    width: 68px;
+    height: 68px;
 }
 
-.card-body{
-    /* background-color:#daf6e1; */
-    border-radius: 20px;
+div.cards section.card img {
+    width: 100%;
 }
 
-/* Pontos de coleta */
-
-.segunda_pag{
-    border-radius: 20px;
-    margin-left: 10px;
+div.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
 }
 
-.botao_area{
-    margin-top: 100px;
-    padding: 5px;
+div.cards section.card p {
+    font-weight: 500;
+    max-width: 240px;
+    font-size: 100%;
+    margin-bottom: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.botao_area nav a{
-    color:white;
-    padding: 20px;
-    font-size: 20px;
+div.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 16px 0;
 }
 
-/* Carousel */
-
-.carousell{
-    margin-top: 20px;
+div.cards section.card.contact button {
+    background: linear-gradient(to right, #275838, #cbffef);
+}
+div.cards section.card.shop button {
+    background: linear-gradient(to right, #065823, #cbffef);
+}
+div.cards section.card.about button {
+    background: linear-gradient(to right, #275838, #cbffef);
 }
 
-.carousel-inner{
-    border-radius: 20px;
-    margin-left: 10px;
+div.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #37574f;
+}
+div.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #37574f;
+}
+div.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #37574f;
+}
+
+.alert-warning {
+    background-color: rgb(3, 56, 36);
+    color: white;
 }
 
 /* Card Lixeiras */
@@ -128,27 +169,20 @@
     margin-left: 45px;
 }
 
-/* Rodapé */
-
-.footer{
-    background-color:rgb(185, 238, 206);
-}
-
-.footer_area{
-    padding: 20px;
-    text-align: center;
+.btn {
+    background-color: rgb(11, 68, 44);
+    border-color: rgb(87, 223, 60);
+    color: white;
 }
 
 /* Mapa */
 #map {
+    width: 100vh;
     height: 100%;
   }
 
-.mapa h4{
-    text-align: center;
-    font-size: 40px;
-    color: #225343;
-    margin-bottom: 20px;
+.mapa {
+    margin-top: 15px;
 }
 
 /* Frequentemente descartados */
@@ -212,4 +246,61 @@
 
 .slick-next:before {
     color: grey;
+}
+
+/* Rodapé */
+
+.footer{
+    background: no-repeat center/cover url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
+}
+
+.footer_area{
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    header {
+        height: calc(100vh - 55px);
+    }
+}
+
+/* Desktop */
+@media only screen and (-width: 992px) {
+
+}
+
+/* Huge */
+@media only screen and (min-width: 1280px) {
+
+}
+
+/* Media cards */
+
+@media screen and (max-width: 720px) {
+    div.cards {
+        flex-direction: column;
+    }
+
+    div.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    div.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    div.cards section.card button {
+        font-size: 70%;
+    }
+
 }

@@ -70,9 +70,10 @@ main form input {
 /* botao sing up */
 main form input[type="submit"] {
     cursor: pointer; /*trocar a seta por uma mãozinha ao passar pelo botão*/
-    width: 110px;
+    width: 120px;
     /* width: 50px; */
     /* margin-top: 4rem; */
+    margin-left: 5px;
     border: none;
     border-radius: 32px;
     background: #000000;

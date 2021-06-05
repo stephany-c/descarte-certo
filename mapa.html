@@ -20,52 +20,35 @@
 </head>
 <body>
 
-    <header class="container-fluid header">
-
-        <div class="row">
-
-            <div class="col-12 header_area">
-                <div class="row mb-3">
-                    <!-- Ocupação da logo em colunas -->
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-2">
-                        <img src="imagens/logoo-removebg.png" class="logo">
-                    </div>
-                    <!-- Ocupação do menu em colunas -->
-                    <div class="col-12 col-sm-8 col-md-5 col-lg-8 menu_area">
-                      <nav class="nav nav-pills flex-column flex-sm-row">
-                        <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Home</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Eletrônico</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Metal</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Papel</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Plastico</a>
-                            <a class="flex-sm-fill text-sm-center nav-link activee" href="index.html">Vidro</a> 
-                     </nav>
-                    </div>
-
-                    <div class="col-12 col-sm-4 col-md-3 col-lg-2 mt-3 menu_account">
-                      <div class="row">
-                        <span class="material-icons col-12 mb-2">
-                          account_circle
-                        </span>
-                        <div id="menu_account--name" class="col-12">
-                          <p></p>
-                          <button id="menu_account--logout" type="button" class="btn btn-outline-danger">Sair</button>
-                        </div>
+<header class="container-fluid mapa_header">
+    <div class="row">
+        <div class="col-12 header_area">
+            <div class="row">    
+                <nav>
+                     <img src="imagens/logoo-removebg.png" class="logo">
+                    <ul>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        <a class="nav-link" href="#">Perfil</a>
                         <a href="login.html"><button id="menu_account--button" type="button" class="btn btn-outline-success">Entrar</button></a>
-                      </div>
-                    </div>
-                </div>
+                        <div class="row">
+                            <div id="menu_account--name" class="col-12">
+                                <p></p>
+                                <button id="menu_account--logout" type="button" class="btn btn-outline-danger">Sair</button>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
             </div>
         </div>
-
-    </header>
+    </div>
+</header>
 
     <main class="container-fluid main">
 
-        <div class="row">
+         <h4>Encontre os pontos de Coleta Seletiva mais próximos a você</h4> 
 
-            <div class="col-12 mapa">
-                <h4>Localização</h4>
+            <div class="mapa">
                 <style>
                     #map {width: 100%; height: 500px;}
                 </style> 
@@ -157,7 +140,7 @@
                 </div>
             </div>
 
-        </div>
+        
 
     </main>
 
