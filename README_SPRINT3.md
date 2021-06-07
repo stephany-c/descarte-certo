@@ -11,7 +11,7 @@ Os processos listados foram desenvolvidos com JavaScript, localizados nos arquiv
 ## Mapa
 
 Foi adicionado o mapa utilizando a API JavaScript do Google Maps, onde é possivel localizar pontos a partir de cordenadas geograficas, tais essas que podem ser encontradas 
-com o auxílio do Google Maps. Para identificar as coorenadas, basta colocar o local que deseja e aparecerá as estas podem ser identificadas na URL do site. 
+com o auxílio do Google Maps. Para identificar as coorenadas, basta colocar o local que deseja e estas podem ser identificadas na URL do site. 
 
 Para realizar o código do mapa foi utilizado o tutorial que a Google disponibilza em: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#all e como
 teste utilizamos as coordenadas da Praça Sete, Belo Horizonte, Minas Gerais.
