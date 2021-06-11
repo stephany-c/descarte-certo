@@ -8,10 +8,11 @@
     /* box-sizing: border-box; */
 }
 
-.row {
+ .row {
     margin-right: 0%;
 }
 
+/*
 header nav ul {
     list-style: none; 
     display: flex;
@@ -32,6 +33,62 @@ header a {
 header nav {
     display: flex;
     justify-content: space-around;
+} */
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+header nav {
+    /* background-color: #161616; */
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    
+    color: rgb(1, 39, 30);
+    
+}
+
+nav, ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+#meenu {
+    background-color: transparent;
+    border: none;
+    color: #225343;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+li:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#meenu:focus~ul {
+    height: 260px;
 }
 
 header {
@@ -52,7 +109,7 @@ header {
 }
 
 .mapa_header {
-    height: calc(100vh - 480px);
+    height: calc(100vh - 550px);
     background: no-repeat center/cover url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
 }
 
@@ -169,12 +226,6 @@ div.cards section.card.about {
     margin-left: 45px;
 }
 
-.btn {
-    background-color: rgb(11, 68, 44);
-    border-color: rgb(87, 223, 60);
-    color: white;
-}
-
 /* Mapa */
 #map {
     width: 100vh;
@@ -261,31 +312,52 @@ div.cards section.card.about {
 
 /* Responsividade */
 
-/* Tablet */
-@media only screen and (max-width: 768px) {
-
-}
-
-/* Mobile */
-@media only screen and (max-width: 480px) {
-    header {
-        height: calc(100vh - 55px);
-    }
-}
-
-/* Desktop */
-@media only screen and (-width: 992px) {
-
-}
-
-/* Huge */
-@media only screen and (min-width: 1280px) {
-
-}
-
-/* Media cards */
-
 @media screen and (max-width: 720px) {
+
+    nav, ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    #meenu {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+
+    header {
+        height: calc(100vh - 300px);
+        background: no-repeat center/cover url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
+    }
+
+    .header_content {
+        align-items: center;
+        justify-content: center;
+        animation: zoomIn;
+        animation-duration: 2s;
+        margin-top: 80px;
+        color:rgb(1, 29, 13);
+    }
+
+    header a {
+        font-weight: 500;
+        color: rgb(1, 7, 4);
+        font-size: 1.2rem;
+    }
+
     div.cards {
         flex-direction: column;
     }
@@ -302,5 +374,7 @@ div.cards section.card.about {
     div.cards section.card button {
         font-size: 70%;
     }
+
+    
 
 }

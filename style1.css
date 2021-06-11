@@ -110,6 +110,14 @@ section.images img {
     width: 100%;
 }
 
+.grid{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     section.images img{
         width: 250%;

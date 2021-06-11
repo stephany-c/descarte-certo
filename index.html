@@ -59,20 +59,40 @@
   </style>
 </head>
 <body>
-
+   
     <header class="container-fluid header">
         <div class="row">
             <div class="col-12 header_area">
                 <div class="row">    
                   <nav>
-                     <img src="imagens/logoo-removebg.png" class="logo">
+                     <div class="logo">
+                        <img src="imagens/logoo-removebg.png" class="logo">
+                     </div>
+                     <button id="meenu">&#9776;</button>
                      <ul>
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      <a class="nav-link" href="cadastro.html">Cadastro</a>
-                      <a class="nav-link" href="#">Perfil</a>
-                      <a class="nav-link" href="mapa.html">Descartes</a>
+                         <li>
+                           <a class="nav-link active" aria-current="page" href="#"><p>Home</p></a>
+                         </li>
+                         <li>
+                           <a class="nav-link" href="cadastro.html"><p>Cadastro</p></a>
+                         </li>
+                         <li>
+                           <a class="nav-link" href="#"><p>Perfil</p></a>
+                         </li>
+                         <li>
+                           <a class="nav-link" href="mapa.html"><p>Descartes</p></a>
+                         </li>
+                         <li>
+                           <a href="login.html"><button id="menu_account--button" type="button" class="btn btn-success">Entrar</button></a>
+                           <div class="row">
+                              <div id="menu_account--name" class="col-12">
+                                 <p></p>
+                                 <button id="menu_account--logout" type="button" class="btn btn-danger">Sair</button>
+                              </div>
+                           </div>
+                         </li> 
                      </ul>
-                  </nav>
+                 </nav>
                   <div class="header_content">
                     <h1>PRESERVE O MEIO AMBIENTE</h1>
                   </div>
@@ -115,132 +135,146 @@
       
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="imagens/slide2.png" class="d-block w-100" alt="...">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-item">
-              <img src="imagens/slide1.png" class="d-block w-100" alt="...">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="imagens/slide2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <img src="imagens/slide1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <img src="imagens/slide4.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="imagens/slide4.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-            <!-- Imagens de Lixeiras -->
-            <div class="row" style="margin-right: 0;">
-              <div class="row row-cols-1 row-cols-md-12 g-4" style="padding-left: 40px">
-                    <div  class="alert alert-warning alert-dismissible fade show" role="alert" style="margin: 0">
-                       <p style="text-align: center;">Clique nas lixeiras abaixo para obter dicas de como descartar cada material
-                       <p> 
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                 </div>
-                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card" style="border: none; width: 54%;">
-                       <img  data-bs-toggle="modal" data-bs-target="#exampleModa1"src="imagens/lixo1.jpg" class="card-img-top" alt="...">
-                       <!-- Modal -->
-                       <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                             <div class="modal-content">
-                                <div class="modal-header">
-                                   <h5 class="modal-title" >Dica para descartar materiais de vidro</h5>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                   Envolva bem os pedaços do vidro em várias folhas de jornais ou plástico bolha e coloque em uma caixa de papelão. Outra opção é cortar uma garrafa pet, colocar os de vidro dentro dela e fechá-la com a parte superior, lembrando-se de vedá-la, para que não abra no caminho. 
-                                </div>
-                                <div class="modal-footer">
-                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card" style="border: none; width: 50%;">
-                       <img  data-bs-toggle="modal" data-bs-target="#exampleModa2" src="imagens/lixo2.jpg" class="card-img-top" alt="...">
-                       <!-- Modal -->
-                       <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                             <div class="modal-content">
-                                <div class="modal-header">
-                                   <h5 class="modal-title" >Dica para descartar materiais de papel</h5>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                   Descarte seus papéis sempre em cestos separados. Restos de alimentos, copos descartáveis e diversos tipos de líquido podem sujar ou contaminar os papéis. Para serem enviados ao reciclador os papéis devem estar secos e sem resíduos.
-                                </div>
-                                <div class="modal-footer">
-                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card" style="border: none; width: 50%;">
-                       <img  data-bs-toggle="modal" data-bs-target="#exampleModa3" src="imagens/lixo3.png" class="card-img-top" alt="...">
-                       <!-- Modal -->
-                       <div class="modal fade" id="exampleModa3" tabindex="-1"  aria-hidden="true">
-                          <div class="modal-dialog">
-                             <div class="modal-content">
-                                <div class="modal-header">
-                                   <h5 class="modal-title">Dica para descartar materiais de plástico</h5>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                   Para o descarte de materiais corretamente, é necessário que eles estejam limpos e separados dos resíduos orgânicos. Alguns dos materiais que podem ser reciclados são garrafas, embalagens de produtos de limpeza, potes de cremes, brinquedos de plástico, garrafas pet, escovas de dentes entre outros.
-                                </div>
-                                <div class="modal-footer">
-                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="card" style="border: none; width: 54%;">
-                       <img  data-bs-toggle="modal" data-bs-target="#exampleModa4" src="imagens/lixo4.png" class="card-img-top" alt="...">
-                       <!-- Modal -->
-                       <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                             <div class="modal-content">
-                                <div class="modal-header">
-                                   <h5 class="modal-title" >Dica para descartar materiais de metal</h5>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                   Descarte latinhas de cerveja, refrigerante e sucos, esquadrias e molduras de quadros. Sempre prensadas ou amassadas para otimizar o armazenamento até o processo de reciclagem.
-                                </div>
-                                <div class="modal-footer">
-                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div> 
-           </div>
-           </div>
+            <!-- Alert -->
+            <div class="row">  
 
+               <div class="row row-cols-1 row-cols-md-3 g-4" style="align-items: center;" >
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 "  >
+                     <div  class="alert alert-warning alert-dismissible fade show" role="alert" style=" margin-left: 30px; margin-bottom: 0px;">
+                        <p style="text-align: center;">Clique nas lixeiras abaixo para obter dicas de como descartar cada material
+                        <p> 
+                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                     </div>
+                  </div>
+           </div>
+ 
+        
+          </div>
+ 
+       <!-- Lixeiras -->
+             <div class="row" style=" margin-bottom:40px; margin-left:15px;">
+ 
+               <div class="row row-cols-1 row-cols-md-3 g-4 "  >
+                  
+                  <div class="col-6 col-sm-6 col-md-3 col-lg-3" >
+                     <div class="rounded mx-auto d-block" style=" width: 54%;">
+ 
+                        <img  data-bs-toggle="modal" data-bs-target="#exampleModa1"src="imagens/lixo1.jpg" class="card-img-top" alt="...">
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" >Dica para descartar materiais de vidro</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    Envolva bem os pedaços do vidro em várias folhas de jornais ou plástico bolha e coloque em uma caixa de papelão. Outra opção é cortar uma garrafa pet, colocar os de vidro dentro dela e fechá-la com a parte superior, lembrando-se de vedá-la, para que não abra no caminho. 
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                     <div class="rounded mx-auto d-block" style=" width: 50%;">
+                        <img  data-bs-toggle="modal" data-bs-target="#exampleModa2" src="imagens/lixo2.jpg" class="card-img-top" alt="...">
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" >Dica para descartar materiais de papel</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    Descarte seus papéis sempre em cestos separados. Restos de alimentos, copos descartáveis e diversos tipos de líquido podem sujar ou contaminar os papéis. Para serem enviados ao reciclador os papéis devem estar secos e sem resíduos.
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                     <div class="rounded mx-auto d-block" style=" width: 50%;">
+                        <img  data-bs-toggle="modal" data-bs-target="#exampleModa3" src="imagens/lixo3.png" class="card-img-top" alt="...">
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModa3" tabindex="-1"  aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title">Dica para descartar materiais de plástico</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    Para o descarte de materiais corretamente, é necessário que eles estejam limpos e separados dos resíduos orgânicos. Alguns dos materiais que podem ser reciclados são garrafas, embalagens de produtos de limpeza, potes de cremes, brinquedos de plástico, garrafas pet, escovas de dentes entre outros.
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                     <div class="rounded mx-auto d-block" style=" width: 54%;">
+                        <img  data-bs-toggle="modal" data-bs-target="#exampleModa4" src="imagens/lixo4.png" class="card-img-top" alt="...">
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" >Dica para descartar materiais de metal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    Descarte latinhas de cerveja, refrigerante e sucos, esquadrias e molduras de quadros. Sempre prensadas ou amassadas para otimizar o armazenamento até o processo de reciclagem.
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+ 
     </main>
 
     <footer class="container-fluid footer">
