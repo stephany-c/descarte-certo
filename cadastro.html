@@ -9,23 +9,74 @@
 </head>
 <body>
     <main>
+        <div class="top-left-corner">
+            <a href="login.html">Voltar</a>
+        </div>
         <h1>Criar Conta</h1>
 
         <form id="cadastro-form" action="">
-            <label for="name">
-                <span>Nome</span>
-                <input type="text" id="name" name="name">
-            </label>
-
-            <label for="email">
-                <span>E-mail</span>
-                <input type="email" id="email" name="email">
-            </label>
-
-            <label for="password">
-                <span>Senha</span>
-                <input type="password" id="password" name="password">
-            </label>
+            <section class="grid">
+                <div class="cad1">
+                    <label for="name">
+                        <span>Nome</span>
+                        <input type="name" id="name" name="name">
+                    </label>
+                </div>
+                <div class="cad1">
+                    <label for="sobrenome">
+                        <span>Sobrenome</span>
+                        <input type="lastname" id="lastname" name="snome">
+                    </label>
+                </div>
+                <div class="cad1">
+                    <label for="email">
+                        <span>E-mail</span>
+                        <input type="email" id="email" name="email">
+                    </label>
+                </div>
+                <div class="cad1">
+                    <label for="email">
+                        <span>Confirmar e-mail</span>
+                        <input type="email" id="email_confirmation" name="email_confirmation">
+                    </label>
+                </div>
+                <div class="cad1">
+                    <label for="password">
+                        <span>Senha</span>
+                        <input type="password" id="password" name="password">
+                    </label>
+                </div>
+                <div class="cad1">
+                    <label for="password">
+                        <span>Confirmar senha</span>
+                        <input type="password" id="password_confirmation" name="n2password">
+                    </label>
+                </div>
+                <div class="cad1" >
+                    <label for="street">
+                        <span>Endereço</span>
+                        <input type="text" id="street" name="rua">
+                    </label>
+                </div>
+                <div class="cad1" >
+                    <label for="streetnumber">
+                        <span>Número</span>
+                        <input type="text" id="streetnumber" name="streetnumber">
+                    </label>
+                </div>
+                <div class="cad1" >
+                    <label for="district">
+                        <span>Bairro</span>
+                        <input type="text" id="district" name="district">
+                    </label>
+                </div>
+                <div class="cad1" >
+                    <label for="state">
+                        <span>Estado</span>
+                        <input type="text" id="state" name="state">
+                    </label>
+                </div>
+            </section>
 
             <div class="login-actions">
                 <input type="submit" value="Sign Up" id="button">
@@ -35,7 +86,6 @@
     <section class="images">
         <img src="imagens/WhatsApp_Image_2021-05-17_at_20.33.16-removebg-preview.png" alt="Mobile">
     </section>
-
     <!-- JQuery 3.6.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Main js -->
