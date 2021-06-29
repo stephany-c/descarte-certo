@@ -31,7 +31,7 @@
 :heavy_check_mark: Página de Login  
 
 
-## Layout ou Deploy da Aplicação :dash:
+## Layout ou Deploy da Aplicação
 
 > Link do deploy da aplicação :
 
