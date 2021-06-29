@@ -155,7 +155,13 @@ section.images img {
     top: 5px;
 }
 
-@media only screen and (max-width: 900px) {
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
     section.images {
         display: none;
         visibility: hidden;
@@ -163,6 +169,16 @@ section.images img {
 
     main {
         width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid span {
+        margin-top: 15px;
     }
 }
 
@@ -178,12 +194,4 @@ section.images img {
     main form label span, main form input[type="submit"] {
         font-size: 1rem;
     }
-}
-
-.grid{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-
 }
