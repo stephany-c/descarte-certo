@@ -33,7 +33,7 @@
 
 ## Layout ou Deploy da Aplicação
 
-> Link do deploy da aplicação :
+> Link do deploy da aplicação : https://vncsmyrnk.github.io/descarte-certo/
 
 
 ## Casos de Uso
