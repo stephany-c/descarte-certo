@@ -60,8 +60,8 @@
 
 ## Desenvolvedores/Contribuintes :octocat:
 
-| [<img src="https://avatars.githubusercontent.com/u/63162394?v=4" width=115><br><sub>Vinicius</sub>](https://github.com/vncsmyrnk) |  [<img src="https://avatars.githubusercontent.com/u/83795094?v=4" width=115><br><sub>Geovanna</sub>](https://github.com/Geovanna77) |  [<img src="https://avatars.githubusercontent.com/u/64992976?s=400&u=b47abcd1f5bffd3bdb510f68250f9eff019a76b0&v=4" width=115><br><sub>Stephany Carolina</sub>](https://github.com/stephany-c) | [<img src="https://avatars.githubusercontent.com/u/79455144?v=4" width=115><br><sub>Renato</sub>](https://github.com/renatovvjr) |
-| :---: | :---: | :---: | :---:
+| [<img src="https://avatars.githubusercontent.com/u/63162394?v=4" width=115><br><sub>Vinicius</sub>](https://github.com/vncsmyrnk) |  [<img src="https://avatars.githubusercontent.com/u/83795094?v=4" width=115><br><sub>Geovanna</sub>](https://github.com/Geovanna77) |  [<img src="https://avatars.githubusercontent.com/u/64992976?s=400&u=b47abcd1f5bffd3bdb510f68250f9eff019a76b0&v=4" width=115><br><sub>Stephany Carolina</sub>](https://github.com/stephany-c) | [<img src="https://avatars.githubusercontent.com/u/79455144?v=4" width=115><br><sub>Renato</sub>](https://github.com/renatovvjr) |  [<img src="https://avatars.githubusercontent.com/u/83675351?v=4" width=115><br><sub>Raíssa</sub>](https://github.com/maiaok) | [<img src="https://avatars.githubusercontent.com/u/78309594?v=4" width=115><br><sub>Gabriel</sub>](https://github.com/ghenriquemp) |
+| :---: | :---: | :---: | :---: | :---: | :---:
 
 ## Licença 
 
