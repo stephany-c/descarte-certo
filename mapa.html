@@ -79,7 +79,12 @@
 
                 <script>
                     function initMap() {
+                        if ("geolocation" in navigator) {
+
+                        navigator.geolocation.getCurrentPosition(function(position){
+
                         var locations = [
+                            ['Minha Localização', position.coords.latitude, position.coords.longitude],
                             ['Praça Sete', -19.919124786602957, -43.9386291030576],
                             ['Brasil Industrial', -19.998422970728413, -44.01414909971543],
                             ['Lourdes', -19.923147705142785, -43.936448551385055],
@@ -88,11 +93,13 @@
 
 
                         ];
+
                         var map = new google.maps.Map(document.getElementById('map'), {
                             zoom: 16,
-                            center: { lat: -19.919124786602957, lng: -43.9386291030576 },
+                            center: { lat: position.coords.latitude, lng: position.coords.longitude },
                             mapTypeId: google.maps.MapTypeId.ROADMAP
                         });
+                        
 
                         var infowindow = new google.maps.InfoWindow();
 
@@ -111,7 +118,10 @@
                                 }
                             })(marker, i));
                         }
+                        }) 
+                        }
                     }
+                    
                 </script>
                 <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT542zYsbxTmvsXH40IoNdmeIm0eeIMSU&callback=initMap&libraries=&v=weekly"
