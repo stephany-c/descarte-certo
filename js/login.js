@@ -22,6 +22,7 @@ $("#login-form").submit(function(e) {
         const loggedUser = {
             name: user[0].name,
             email: user[0].email,
+            location: user[0].location,
         }
 
         localStorage.setItem('user', JSON.stringify(loggedUser));
