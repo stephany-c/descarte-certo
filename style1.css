@@ -122,7 +122,7 @@ main form input[type="submit"]:hover {
 }
 
 main form a:hover {
-    #background: #136d4c;
+  background: #136d4c;
 }
 
 .login-actions {

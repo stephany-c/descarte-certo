@@ -286,76 +286,9 @@ div.cards section.card.about {
     text-align: center;
 }
 
-/* Responsividade */
-
-/* @media screen and (max-width: 720px) {
-
-    nav, ul {
-        flex-direction: column;
-    }
-
-    ul {
-        text-align: center;
-        margin: 0;
-        height: 0;
-    }
-
-    nav {
-        padding: 0;
-        align-items: flex-start;
-    }
-
-    #meenu {
-        display: flex;
-    }
-
-    li,
-    ul {
-        width: 100%;
-    }
-
-    header {
-        height: calc(100vh - 300px);
-        background: no-repeat center/cover url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
-    }
-
-    .header_content {
-        align-items: center;
-        justify-content: center;
-        animation: zoomIn;
-        animation-duration: 2s;
-        margin-top: 80px;
-        color:rgb(1, 29, 13);
-    }
-
-    header a {
-        font-weight: 500;
-        color: rgb(1, 7, 4);
-        font-size: 1.2rem;
-    }
-
-    h1 {
-        margin-left: 30px;
-    }
-
-    div.cards {
-        flex-direction: column;
-    }
-
-    div.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    div.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-
-    div.cards section.card button {
-        font-size: 70%;
-    }
-
-} */
+div.footer{
+    padding: 0;
+}
 
 @media screen and (max-width: 920px) {
 
