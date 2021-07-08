@@ -36,16 +36,13 @@
   
               <ul class="list-auto">
                  <li>
-                    <a href="index.html" title="Chaves">Home</a>
+                    <a href="index.html" title="Home">Home</a>
                  </li>
                  <li>
-                    <a href="cadastro.html" title="Chiquinha">Cadastro</a>
+                    <a href="cadastro.html" title="Cadastro">Cadastro</a>
                  </li>
                  <li>
-                    <a href="#" title="Seu Madruga">Perfil</a>
-                 </li>
-                 <li>
-                    <a href="mapa.html" title="Quico">Descartes</a>
+                    <a href="mapa.html" title="Descartes">Descartes</a>
                  </li>
                  <li>
                     <a href="login.html"><button id="menu_account--button" type="button" class="btn btn-success">Entrar</button></a>
@@ -89,12 +86,86 @@
                         navigator.geolocation.getCurrentPosition(function(position){
 
                         var locations = [
-                            ['Minha Localização', position.coords.latitude, position.coords.longitude],
+                        ['Minha Localização', position.coords.latitude, position.coords.longitude],
                             ['Praça Sete', -19.919124786602957, -43.9386291030576],
                             ['Brasil Industrial', -19.998422970728413, -44.01414909971543],
                             ['Lourdes', -19.923147705142785, -43.936448551385055],
                             ['São Lucas', -19.930271616209808, -43.92416764082524],
                             ['Aparecida', -19.89024469873254, -43.96569254686181],
+                            ['Ademar Maldonado', -19.97929620269, -44.02747372476935],
+                            ['Barreiro de Baixo', -19.979244657663727, -44.024529096877636],
+                            ['Brasil Industrial', -20.00047688655882, -44.013610382690025],
+                            ['Flávio Marques Lisboa', -20.000068759518996, -43.99818961591441],
+                            ['Lindéia', -19.979447307279692, -44.048018029408446],
+                            ['Tirol', -19.987196803629057, -44.044644387079124],
+                            ['Centro', -19.925155821919407, -43.9362645378785],
+                            ['Funcionários/Av. Contorno', -19.925155821919407, -43.9362645378785],
+                            ['Funcionários/Rua dos Timbiras', -19.928543636652925, -43.932505353766054],
+                            ['Funcionários/Rua Sergipe', -19.928813266149866, -43.935807513233996],
+                            ['Lourdes / Minas Tênis Clube', -19.936650458602188, -43.94196407173351],
+                            ['Santa Lúcia', -19.95123359371909, -43.945908851602226],
+                            ['Santo Antônio', -19.938272911280905, -43.94728650586403],
+                            ['São Bento / Estacion. Porcão', -19.96005122097165, -43.957181534293554],
+                            ['São Bento / Prox. Raja Gril', -19.963428153621525, -43.95578760007007],
+                            ['São Bento / Raja Gabáglia', -19.956250880584626, -43.957674213034124],
+                            ['Savassi', -19.936262233925913, -43.93251797437742],
+                            ['Serra', -19.944141522916517, -43.91812418714506],
+                            ['Santa Inês', -19.894126943709978, -43.912725063788336],
+                            ['Cachoeirinha', -19.885379354325554, -43.94315719864151],
+                            ['Fernão Dias', -19.873470902115105, -43.914539486402695],
+                            ['Ipiranga / SLU - GERLU', -19.88555837988809, -43.932103997645044],
+                            ['Ipiranga', -19.87766932893746, -43.930635296319366],
+                            ['Santa Cruz', -19.873990317552202, -43.93819778035483],
+                            ['São Gabriel', -19.854169301334576, -43.915375769081386],
+                            ['São Paulo', -19.85594726665647, -43.91944288328312],
+                            ['Alto dos Pinheiros', -19.932724290487403, -43.99786451431734],
+                            ['Minaslândia', -19.853671115071833, -43.93202352627556],
+                            ['Havaí', -19.964324493987434, -43.970471317098706],
+                            ['Nova Gameleira', -19.937564320265082, -43.99094123480684],
+                            ['Nova Granada / CEVAE', -19.943843531977617, -43.96586945661793],
+                            ['Nova Granada', -19.944633266062258, -43.965759469988754],
+                            ['Nova Suiça', -19.936797441346997, -43.97253981591521],
+                            ['Salgado Filho / GERLU', -19.945332720190855, -43.981621721190535],
+                            ['Salgado Filho', -19.944172711679354, -43.98147620164573],
+                            ['Vista Alegre', -19.953012642877013, -43.99895107223111],
+                            ['Bandeirantes', -19.873876499182135, -43.987864175028],
+                            ['Pampulha', -19.86267793411162, -44.00290102768908],
+                            ['UFMG – Campus Pampulha', -19.862938819115676, -43.9584276289414],
+                            ['Dona Clara', -19.857359159366936, -43.93667235824561],
+                            ['Garças', -19.833410207723922, -43.996198731258424],
+                            ['Itapoã / Av. Portugal', -19.842486962501297, -43.964525634531995],
+                            ['Itapoã', -19.833544520671182, -43.962412833915536],
+                            ['Itapoã / Lagoa do Nado', -19.83799932025462, -43.959849444752095],
+                            ['Itapoã / Rua Monte Castelo', -19.838075051833062, -43.96484300242286],
+                            ['Jardim Atlântico', -19.839944754254493, -43.99071141244574],
+                            ['Liberdade / Residencial Village', -19.863915493023796, -43.95691065251007],
+                            ['Liberdade / URPV', -19.86565348889208, -43.95550603945287],
+                            ['Paquetá', -19.887075517273615, -43.993775173586705],
+                            ['Santa Amélia', -19.836017025856727, -43.97172724475197],
+                            ['Santa Terezinha', -19.86792514850964, -44.006192115486876],
+                            ['São Francisco', -19.87141055635899, -43.95682371776402],
+                            ['São Francisco / Rua das Bandeiras', -19.86707065440254, -43.95195689606836],
+                            ['São Francisco / Esq. Rua Algarve', -19.876887778547896, -43.95708001023306],
+                            ['São José', -19.860328335913884, -43.964120392877184],
+                            ['São Luiz', -19.868280311748126, -43.976204815916326],
+                            ['São Luiz / AV. Prof. Magalhães Penido', -19.853720865077136, -43.957640884246324],
+                            ['São Luiz / Praça Alberto Dalva Simão', -19.85363632919078, -43.96724440510831],
+                            ['São Luiz / Praça Expedicionário Lourival Pereira', -19.86085420718276, -43.979608273847596],
+                            ['Serrano', -19.877078045339832, -44.01379753125762],
+                            ['Serrano / Praça Sol Nascente', -19.887950978367826, -44.00957646448966],
+                            ['Jardim Europa', -19.803322349388765, -43.97213999472353],
+                            ['Parque São Pedro', -19.814890115404417, -43.95288428213158],
+                            ['Rio Branco', -19.815491543987058, -43.9754630190298],
+                            ['Santa Luzia', -19.801667668868756, -43.97174874016995],
+                            ['Ribeirão das Neves', -19.77878346485682, -44.07716600392914],
+                            ['Sabará', -19.91149360693994, -43.82319592991605],
+                            ['Nova Lima', -19.998155197205417, -43.85410129900306],
+                            ['Ibirité', -19.99760250568705, -44.01418769480978],
+                            ['Itabirito', -20.248916178905425, -43.803922130004494],
+                            ['Brumadinho', -20.142663653601293, -44.209879221485046],
+                            ['Betim', -19.941051966408082, -44.17985959838169],
+                            ['Vespasiano', -19.75231985333458, -43.94690811812171],
+                            ['Vespasiano', -19.75231985333458, -43.94690811812171],
                         ];
 
                         const user = JSON.parse(localStorage.getItem('user') ?? '');
@@ -139,6 +210,63 @@
                     async></script>
             </div>
         </div>
+
+        <div class="grafico">
+            <h4>Descartes Mensais</h4>
+        </div>
+
+        <div style="width: 100%;">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            
+                <script type="text/javascript">
+            
+                    google.charts.load('current', {'packages':['bar']});
+                
+                    google.charts.setOnLoadCallback(drawChart);
+                
+                    function drawChart() {
+                
+                        var data = google.visualization.arrayToDataTable([
+                
+                        ['Mês', 'Plástico', 'Papel', 'Vidro'],
+                
+                        // ['Janeiro', 1000, 400, 200],
+                
+                        // ['Fevereiro', 1170, 460, 250],
+                
+                        ['Março', 660, 1120, 300],
+                
+                        ['Abril', 1030, 540, 350],
+
+                        ['Maio', 1030, 540, 350],
+
+                        ['Junho', 1030, 540, 350]
+                
+                        ]);
+                
+                        var options = {
+                
+                        // chart: {
+                
+                        //     title: 'COLETAS REALIZADAS',
+                
+                        //     subtitle: 'Vidro, Papel, Plastico',
+                
+                        // }
+                
+                        };
+                
+                        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+                
+                        chart.draw(data, google.charts.Bar.convertOptions(options));
+                
+                    }
+            
+            </script>
+        </div>
+        
+        <center><div id="columnchart_material"></div></center>
+        
 
         <div class="col-12 mt-5 frequentemente_descartados">
             <h4>Frequentemente descartados</h4>
