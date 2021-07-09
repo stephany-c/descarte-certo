@@ -27,38 +27,37 @@
 <body>
 
     <header>
-        <input type="checkbox" id="control-nav"/>
-  
-              <label for="control-nav" class="control-nav"></label>
-              <label for="control-nav" class="control-nav-close"></label>
-              <img src="imagens/logoo-removebg.png" class="logo">
-              <nav class="float-r">
-  
-              <ul class="list-auto">
-                 <li>
+        <div style="width: 100%; height: 100%; background: linear-gradient(180deg, white, transparent 60%);">
+            <input type="checkbox" id="control-nav"/>
+    
+            <label for="control-nav" class="control-nav"></label>
+            <label for="control-nav" class="control-nav-close"></label>
+            <img src="imagens/logoo-removebg.png" class="logo">
+            <nav class="float-r">
+                <ul class="list-auto">
+                    <li>
                     <a href="index.html" title="Home">Home</a>
-                 </li>
-                 <li>
+                    </li>
+                    <li>
                     <a href="cadastro.html" title="Cadastro">Cadastro</a>
-                 </li>
-                 <li>
+                    </li>
+                    <li>
                     <a href="mapa.html" title="Descartes">Descartes</a>
-                 </li>
-                 <li>
-                    <a href="login.html"><button id="menu_account--button" type="button" class="btn btn-success">Entrar</button></a>
-                    <div class="row">
-                       <div id="menu_account--name" class="col-12">
-                          <p></p>
-                          <button id="menu_account--logout" type="button" class="btn btn-danger">Sair</button>
-                       </div>
-                    </div>
-                 </li> 
-              </ul>
-           </nav>
-           <div>
-              <h1>DESCARTE COM CONSCIÊNCIA</h1>
+                    </li>
+                    <li>
+                    <a id="menu_account--button" href="login.html"><button type="button" class="btn btn-success">Entrar</button></a>
+                    <a id="menu_account--name" title="Descartes"></a>
+                    </li>
+                    <li>
+                    <a><button id="menu_account--logout" type="button" class="btn btn-danger">Sair</button></a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <h1>DESCARTE COM CONSCIÊNCIA</h1>
             </div>
-      </header>
+        </div>
+    </header>
 
     <main class="container-fluid main">
 
@@ -228,19 +227,19 @@
                 
                         var data = google.visualization.arrayToDataTable([
                 
-                        ['Mês', 'Plástico', 'Papel', 'Vidro'],
+                        ['Mês', 'Plástico', 'Papel', 'Vidro', 'Metal'],
                 
                         // ['Janeiro', 1000, 400, 200],
                 
                         // ['Fevereiro', 1170, 460, 250],
                 
-                        ['Março', 660, 1120, 300],
+                        ['Março', 660, 1120, 300, 120],
                 
-                        ['Abril', 1030, 540, 350],
+                        ['Abril', 1030, 540, 350, 240],
 
-                        ['Maio', 1030, 540, 350],
+                        ['Maio', 1030, 540, 350, 50],
 
-                        ['Junho', 1030, 540, 350]
+                        ['Junho', 1030, 540, 350, 300]
                 
                         ]);
                 
@@ -253,6 +252,7 @@
                         //     subtitle: 'Vidro, Papel, Plastico',
                 
                         // }
+                            colors: ['red', 'blue', 'green', 'yellow']
                 
                         };
                 
@@ -266,6 +266,13 @@
         </div>
         
         <center><div id="columnchart_material"></div></center>
+        <!-- <center>
+            <div
+                id="columnchart_material"
+            >
+                <img src="https://picsum.photos/700/300">
+            </div>
+        </center> -->
         
 
         <div class="col-12 mt-5 frequentemente_descartados">

@@ -28,10 +28,12 @@ $(document).ready(function(){
     if (user) {
         $('#menu_account--button').hide();
         $('#menu_account--name').show();
-        $('#menu_account--name p').html(user.name);
+        $('#menu_account--logout').show();
+        $('#menu_account--name').html(user.name);
     } else {
         $('#menu_account--button').show();
         $('#menu_account--name').hide();
+        $('#menu_account--logout').hide();
     }
 
     // Logout

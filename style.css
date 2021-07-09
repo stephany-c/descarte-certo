@@ -63,12 +63,13 @@ input#control-nav {
 }
 
 #columnchart_material{
+    overflow: auto;
     width: 100% !important;
     height: 300px; 
 }
 
 header{
-    height: calc(100vh - 210px);
+    height: calc(100vh - 500px);
     background: no-repeat center/cover url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);   
 }
 
@@ -491,5 +492,11 @@ div.footer{
 
     div.cards section.card button {
         font-size: 70%;
+    }
+  }
+
+  @media screen and (max-height: 700px) {
+    header h1 {
+        display: none;
     }
   }
